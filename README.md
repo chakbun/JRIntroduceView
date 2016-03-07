@@ -22,6 +22,30 @@ JRIntroduceView 一个用objective－c封装的轻量级控件，适用于 app �
 	JRIntroduceView *introduceView = [[JRIntroduceView alloc] initWithFrame:CGRectMake(0, 0, JRSCREEN_WIDTH, JRSCREEN_HEIGHT)];
 ```
 
+* 告诉JRIntroduceView要展示的图片，通过其属性introduceImages实现。
+```obj-c
+    NSArray *images = @[@"guideImages_iphone6_P1",@"guideImages_iphone6_P2",@"guideImages_iphone6_P3",@"guideImages_iphone6_P4"];
+    
+    introduceView.introduceImages = images;
+```
+
+* 图片展示到最后一页会出现完成的按钮，按钮时间通过block实现
+ 
+```obj-c
+    introduceView.enterActionBlock = ^(UIButton *enterButton) {
+
+    };
+```
+
+*最后将introduceView 加入到需要的视图中去。
+
+```obj-c
+[self.view addSubview:introduceView];
+```
+
+
+
+
 
 
 
