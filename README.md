@@ -37,9 +37,9 @@ JRIntroduceView 一个用objective－c封装的轻量级控件，适用于 app �
     };
 ```
 
-*最后将introduceView 加入到需要的视图中去。
+* 最后将introduceView 加入到需要的视图中去。
 
-```obj-c
+```obj-c	
 [self.view addSubview:introduceView];
 ```
 
