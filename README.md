@@ -12,15 +12,15 @@ JRIntroduceView 一个用objective－c封装的轻量级控件，适用于 app �
 
 * 在项目中的RootViewController引入头文件
 
-```c
+```obj-c
 	#import "JRIntroduceView.h"
-
 ```
 
 * 实例化JRIntroduceView，
 
-
-
+```obj-c
+	JRIntroduceView *introduceView = [[JRIntroduceView alloc] initWithFrame:CGRectMake(0, 0, JRSCREEN_WIDTH, JRSCREEN_HEIGHT)];
+```
 
 
 
